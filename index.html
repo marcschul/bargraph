@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/chartLibrary.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Graph</title>
+    <meta name="description" content="Bar Graph">
+  </head>
+
+  <body>
+    <header>
+      <h1>Bar Graph</h1>
+    </header>
+
+    <div id="wrapper">
+    <!-- Chart Begins -->
+      <div id="left-top">
+        <ul class="percent">
+          <li><span>100%</span></li>
+          <li><span>75%</span></li>
+          <li><span>50%</span></li>
+          <li><span>25%</span></li>
+          <li><span>0%</span></li>
+        </ul>
+      </div>
+
+      <div id="right-top">
+        <ul class="bars">
+          <li><div class="bar" data-percentage="20"></div></li>
+          <li><div class="bar" data-percentage="40"></div></li>
+          <li><div class="bar" data-percentage="60"></div></li>
+          <li><div class="bar" data-percentage="80"></div></li>
+          <li><div class="bar" data-percentage="100"></div></li>
+        </ul>
+
+      </div>
+
+      <div id="left-bottom">
+      </div>
+
+      <div id="right-bottom">
+        <ul class="options">
+          <li><span id="option1"></span></li>
+          <li><span id="option2"></span></li>
+          <li><span id="option3"></span></li>
+          <li><span id="option4"></span></li>
+          <li><span id="option5"></span></li>
+        </ul>
+      </div>
+     <!-- Chart Ends -->
+    </div>
+
+
+    <footer>
+      <p>Incorpated by Zerker</p>
+    </footer>
+
+    <script>
+      // drawBarChart (data, options, element)
+      // drawBarChart (<changes data value & bar graph height>, <text for option>, <id of element>)
+      drawBarChart('25', 'Cows', '#option1');
+      drawBarChart('', 'Moose', '#option2');
+      drawBarChart('', 'Deer', '#option3');
+      drawBarChart('', 'Wolves', '#option4');
+      drawBarChart('', 'BigFoot', '#option5');
+    </script>
+
+
+
+  </body>
+</html>
